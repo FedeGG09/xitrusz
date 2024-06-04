@@ -1,0 +1,128 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/has_afiliacion_salud> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_años_escolaridad> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_calidad_ingresos_familiares> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_calidad_ingresos_lab> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_calidad_ingresos_no_lab> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_calidad_ingresos_totales> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_cantidad_hijos_nac_vivos> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_cat_ocupacional> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_comuna> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_dominio> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_edad> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_estado_educativo> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_estado_ocupacional> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_hijos_nacidos_vivos> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_id> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_ingreso_per_capita_familiar> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_ingreso_total_lab> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_ingreso_total_no_lab> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_ingresos_familiares> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_ingresos_totales> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_lugar_nacimiento> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_miembro> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_nhogar> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_nivel_actual> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_nivel_max_educativo> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_num_miembro_madre> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_num_miembro_padre> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_parentesco_jefe> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_sector_educativo> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_sexo> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_situacion_conyugal> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+

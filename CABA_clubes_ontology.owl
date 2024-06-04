@@ -1,0 +1,84 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/has_actividades> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_altura> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_barrio> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_calle> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_comuna> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_direccion> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_direccion_normalizada> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_e_mail> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_facebook> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_id> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_instalaciones> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_lat> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_long> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_nom_mapa> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_nombre> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_sede> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_telefono> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_tipo> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_tipo_normalizado> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_web> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+

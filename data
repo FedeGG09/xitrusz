@@ -1,0 +1,63 @@
+def generate_response(data_context, user_question, max_tokens_per_part=300, tokens_per_minute=1000):
+    """
+    Generates a response to a user question using OpenAI's API, with token usage throttling.
+
+    Args:
+        data_context (str): The context data to provide to the model.
+        user_question (str): The user's question.
+        max_tokens_per_part (int, optional): The maximum number of tokens per question part. Defaults to 300.
+        tokens_per_minute (int, optional): The token limit per minute imposed by your OpenAI plan. Defaults to 1000.
+
+    Returns:
+        str: The generated response to the user question.
+    """
+
+    # Contador de tokens por minuto
+    minute_tokens = 0
+    start_minute = time.time()
+
+    # Dividir la pregunta en fragmentos
+    question_parts = [user_question[i:i+max_tokens_per_part] for i in range(0, len(user_question), max_tokens_per_part)]
+
+    # Inicializar la lista de respuestas
+    responses = []
+
+    for part in question_parts:
+        # Verificar si se excede el límite de tokens por minuto
+        elapsed_time = time.time() - start_minute
+        if minute_tokens + 2000 > tokens_per_minute:
+            # Limite excedido, implementar estrategia de espera
+            time_to_wait = (tokens_per_minute - minute_tokens) / 2000
+            time.sleep(time_to_wait)
+            minute_tokens = 0
+            start_minute = time.time()
+
+        # Combinar contexto y fragmento
+        prompt = f"Contexto de Datos:\n{data_context}\n\nPregunta: {part}\nRespuesta:"
+
+        # Reducir tokens de entrada (opcional)
+        # - Implementar técnicas como truncamiento o resumen para acortar data_context if needed
+
+        # Reducir tokens de salida (opcional)
+        adjusted_max_tokens = min(2000, tokens_per_minute - minute_tokens)  # Dynamically adjust based on remaining tokens
+
+        # Enviar solicitud a la API
+        response = openai.ChatCompletion.create(
+            model="gpt-4-turbo",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=adjusted_max_tokens,
+            n=1,
+            stop=None,
+            temperature=0.5,
+        )
+
+        # Procesar respuesta
+        if response.choices and len(response.choices) > 0:
+            responses.append(response.choices[0]['message']['content'].strip())
+            minute_tokens += len(response.choices[0]['message']['content'])
+        else:
+            responses.append("Lo siento, no pude generar una respuesta para esta parte de la pregunta.")
+
+    # Concatenar respuestas
+    full_response = " ".join(responses)
+    return full_response

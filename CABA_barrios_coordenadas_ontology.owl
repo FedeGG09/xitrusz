@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/has_area> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_barrio> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_comuna> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_objeto> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_perimetro> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_wkt> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+

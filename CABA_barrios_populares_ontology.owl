@@ -1,0 +1,44 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/has_alias> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_brio_inter> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_id> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_manzana> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_nom_map> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_nom_y_mza> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_nombre> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_observ> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_superficie> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
+<http://example.org/has_tipo_asent> a owl:DatatypeProperty ;
+    rdfs:domain <http://example.org/Table> ;
+    rdfs:range xsd:string .
+
