@@ -11,7 +11,7 @@ from decouple import config
 
 # Configuración de OpenAI
 openai.api_key = (config("API_KEY"))
-print(config("API_KEY"))
+
 
 # CSS personalizado para la interfaz
 css = """
@@ -134,7 +134,7 @@ def generate_response(input_text, data):
                     "content": f"{data}\n\n{input_text}",
                 }
             ],
-            max_tokens=2000,
+            max_tokens=4000,
             n=1,
             stop=None,
             temperature=0.7,
